@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Figurines</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />  
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__title-container">
+      <h1 class="header__title">oFig</h1>
+      <h2 class="header__subtitle">Figurines et statuettes</h2>
+    </div>
+    <div class="header__cart-container">
+      <h2 class="header__cart-title">
+        Votre panier <span class="header__cart-title__number-product">2 produits</span>
+      </h2>
+    </div>
+  </header>
+
+  <main class="cart-container">
+    <header class="cart-container__title">
+      <h3>Préférences de livraison</h3>
+    </header>
+
+    <div class="cart-container__form">
+      <form class="spending-form"> <!--Le formulaire doit comprendre toutes les parties (livraison / prix / boutons)-->
+        <div class="spending-choice"> <!-- A la place des div, il fallait mettre des sections pour les grandes parties-->
+          <div class="spending-form__adress">
+            <h4>Où souhaitez-vous être livré ?</h4>
+            <div class="choices">
+              <input type="radio" name="adress">
+              <label>Mon adresse actuelle</label>
+            </div>
+            <div class="choices" name="adress">
+              <input type="radio">
+              <label>Autre adresse</label>
+            </div>
+            
+          </div>
+
+          <div class="spending-form__options">
+            <h4>Options</h4>
+            <div class="choices">
+              <input type="checkbox">
+              <label>Suivi de livraison par sms (inclus)</label>
+            </div>
+            <div class="choices">
+              <input type="checkbox">
+              <label>Satisfait ou remboursé (+2 euros)</label>
+            </div>
+            <div class="choices">
+              <input type="checkbox">
+              <label>Garantie 2 ans (+10 euros)</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="new-spending-adress">
+          <h4>Adresse</h4>
+          <label for="street">Rue</label>
+          <input id="street" type="text" name="user_street">
+
+          <label for="postal-code">Code Postal</label>
+          <input id="postal-code" type="number" name="user_postal-code">
+
+          <label for="city">Ville</label>
+          <input id="city" type="text" name="user_city">
+
+          <h4>Informations complémentaires</h4>
+          <label for="complementary-adress-informations">interphone, bâtiment, etc.</label>
+          <textarea id="complementary-adress-informations" type="text" name="user_complementary-adress-informations"></textarea>
+        </div>
+      </form>
+    </div>
+
+    <div class="cart-container__final-price-container">
+      <div class="final-price-container__box">
+        <span>Montant à régler :</span>
+        <span id="price">197 €</span>
+      </div>
+    </div>
+
+    <div class="cart-container__button-container">
+      <button>Continuer vos achats</button>
+      <button id="buy">Valider et payer</button> <!-- ça aurait été mieux de mettre une class avec un modificateur - ex : button-container__button--red -->
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    oFig - toutes les images sont sous copyright SquareEnix
+  </footer>
+
+  <div class="fixed-sales"> <!-- Mettre en aside, on pouvait utiliser un bouton à l'intérieur -->
+    soldes
+  </div>
+
+</body>
+</html>
