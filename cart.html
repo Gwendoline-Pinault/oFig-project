@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
 <head>
   <meta charset="UTF-8">
+  <meta name="author" content="Gwendoline PINAULT">
+  <meta name="description" content="Site de vente de figurines">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Figurines</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,700" rel="stylesheet">
+  <title>OFig Figurines</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/reset.css" />
-  <link rel="stylesheet" href="../css/style.css" />  
+  <link rel="stylesheet" href="../css/cart-style.css" />
+  <script src="https://kit.fontawesome.com/9bb354fd37.js" crossorigin="anonymous"></script>  
 </head>
 <body>
 
@@ -16,6 +17,7 @@
     <div class="header__title-container">
       <h1 class="header__title">oFig</h1>
       <h2 class="header__subtitle">Figurines et statuettes</h2>
+      <a class="header__home" href="/index.html">Accueil <i class="fas fa-home" style="color: #ffffff;"></i></a>
     </div>
     <div class="header__cart-container">
       <h2 class="header__cart-title">
@@ -31,8 +33,8 @@
 
     <div class="cart-container__form">
       <form class="spending-form"> <!--Le formulaire doit comprendre toutes les parties (livraison / prix / boutons)-->
-        <div class="spending-choice"> <!-- A la place des div, il fallait mettre des sections pour les grandes parties-->
-          <div class="spending-form__adress">
+        <section class="spending-choice"> <!-- A la place des div, il fallait mettre des sections pour les grandes parties-->
+          <article class="spending-form__adress">
             <h4>Où souhaitez-vous être livré ?</h4>
             <div class="choices">
               <input type="radio" name="adress">
@@ -43,9 +45,9 @@
               <label>Autre adresse</label>
             </div>
             
-          </div>
+          </article>
 
-          <div class="spending-form__options">
+          <article class="spending-form__options">
             <h4>Options</h4>
             <div class="choices">
               <input type="checkbox">
@@ -59,10 +61,10 @@
               <input type="checkbox">
               <label>Garantie 2 ans (+10 euros)</label>
             </div>
-          </div>
-        </div>
+          </article>
+        </section>
 
-        <div class="new-spending-adress">
+        <section class="new-spending-adress">
           <h4>Adresse</h4>
           <label for="street">Rue</label>
           <input id="street" type="text" name="user_street">
@@ -76,21 +78,21 @@
           <h4>Informations complémentaires</h4>
           <label for="complementary-adress-informations">interphone, bâtiment, etc.</label>
           <textarea id="complementary-adress-informations" type="text" name="user_complementary-adress-informations"></textarea>
-        </div>
+        </section>
       </form>
     </div>
 
-    <div class="cart-container__final-price-container">
+    <section class="cart-container__final-price-container">
       <div class="final-price-container__box">
         <span>Montant à régler :</span>
         <span id="price">197 €</span>
       </div>
-    </div>
+    </section>
 
-    <div class="cart-container__button-container">
+    <section class="cart-container__button-container">
       <button>Continuer vos achats</button>
       <button id="buy">Valider et payer</button> <!-- ça aurait été mieux de mettre une class avec un modificateur - ex : button-container__button--red -->
-    </div>
+    </section>
 
   </main>
 
@@ -98,9 +100,9 @@
     oFig - toutes les images sont sous copyright SquareEnix
   </footer>
 
-  <div class="fixed-sales"> <!-- Mettre en aside, on pouvait utiliser un bouton à l'intérieur -->
+  <aside class="fixed-sales"> <!-- Mettre en aside, on pouvait utiliser un bouton à l'intérieur -->
     soldes
-  </div>
+  </aside>
 
 </body>
 </html>

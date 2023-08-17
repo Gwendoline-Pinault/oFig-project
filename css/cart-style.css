@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 :root {
   --red-color: #c80000;
   --gray-color: #666;
@@ -30,6 +32,20 @@ body {
 
 .header__subtitle {
   margin-left: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.header__home {
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  font-weight: bold;
+  width: 85%;
+}
+
+.fa-home{
+  margin-left: 5px;
 }
 
 .header__cart-container {
