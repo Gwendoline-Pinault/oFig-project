@@ -43,7 +43,6 @@ body {
   align-self: center;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 5px;
 }
 
 .header__cart-label {
@@ -71,6 +70,7 @@ body {
   font-weight: 500;
   font-size: 1.2rem;
 }
+
 
 /*Corps avec les images*/
 main {
@@ -158,4 +158,39 @@ footer {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   padding: 5px;
+}
+
+/* Adaptation aux écrans des mobiles */
+@media (max-width: 600px) {
+
+  .header__title {
+    padding: 10px;
+  }
+
+  .header__theme-title {
+    font-size: 1rem;
+  }
+
+  article {
+    width: 100%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 26px;
+  }
+
+  button {
+    margin: 0;
+    font-size: 16px;
+  }
+
+  .price-container {
+    width: 50%;
+    align-items: center;
+    margin: 0;
+  }
 }
